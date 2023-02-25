@@ -1,0 +1,83 @@
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+/* Global */
+html{
+min-height: 100%;
+overflow: hidden;
+}
+body{
+height: calc(100vh - 8em);
+padding: 4em;
+color: rgba(255,255,255,.75);
+font-family: 'Anonymous Pro', monospace;
+/* background-image: url('images/earphones.png'); */
+background-size: cover;
+}
+
+a {
+  text-decoration-color: inherit;
+  text-decoration-skip-ink: none;
+  /* text-decoration: none; */
+  color: inherit;
+}
+
+.intro{
+position: relative;
+top: 10%;
+width: 24em;
+margin: 0 auto;
+font-size: 130%;
+text-align: center;
+}
+
+nav {
+  align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+  margin-bottom: 30px;
+}
+
+.navbar{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+  display: inline-block;
+}
+
+.navbar-item {
+	float: left;
+	display: inline;
+}
+
+.navbar-block {
+	display: block;
+	color: white;
+	font-weight: 500;
+  font-size: 30px;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+  	padding-bottom: 3px
+}
+
+.navbar-block:after {
+	content: '';
+	display: block;
+	margin: auto;
+	margin-top: 2px;
+	height: 1px;
+	width: 0px;
+	background: white;
+	transition: width .2s linear;
+}
+
+.navbar-block:hover:after {
+	width: 96%;
+	background: white;
+}
+
+typed-strings{
+  white-space: pre;
+}
